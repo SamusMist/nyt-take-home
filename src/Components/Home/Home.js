@@ -1,14 +1,14 @@
 import './Home.css';
 import SingleArticle from '../SingleArticle/SingleArticle';
-import React, {useState} from 'react';
 import nextId from "react-id-generator";
 
-const Home = ({ stories }) => {
+const Home = ({ stories, setArticle }) => {
 
   const allStories = stories.map(data => {
+    data.id = Date.now();
     return (
       <div className='article-display' key={nextId()}>
-        <SingleArticle {...data}/>
+        <SingleArticle setArticle={setArticle} { ...data } />
       </div>
     )
   })
