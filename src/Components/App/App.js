@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState, useEffect} from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import Header from '../../Header';
+import Error from '../../Error';
+import Home from '../../Home';
 
-function App() {
+const App = () => {
+  const [stories, setStories] = useState([])
+
+const fetchStories = () => {
+  fetchData.getData(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=5tD1M6InGK2xFGKqj8uIHTo5EZJ6Yo0i`)
+     .then(data => setStories(data.results))
+     .catch((error) => {
+       setError(error)
+    })
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
 }
