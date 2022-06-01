@@ -4,11 +4,11 @@ const fetchData = {
       .then(response => {
         if(!response.ok) {
           if(response.status >= 500) {
-              throw new Error(`Please Be sure to select a rover and date within the rovers lifecycle`)
+              throw new Error(`Uh oh, something went wrong.`)
             } else if (response.status === 404) {
-              throw new Error(`Cannot load page. Please try again.`)
+              throw new Error(`Page not found`)
             } else {
-              throw new Error(`Please select a rover and a date within the rovers lifecycle`)
+              throw new Error(`Uh oh, something went wrong.`)
           }
         }
         else {
