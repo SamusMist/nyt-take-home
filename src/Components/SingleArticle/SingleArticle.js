@@ -13,4 +13,4 @@ const SingleArticle = ({ section, title, abstract, multimedia }) => {
   )
 }
 
-export default RoverCard;
+export default SingleArticle;
