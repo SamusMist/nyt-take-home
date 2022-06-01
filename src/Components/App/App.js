@@ -5,12 +5,14 @@ import Header from '../../Header';
 import Error from '../../Error';
 import Home from '../../Home';
 
+const key = process.env.REACT_APP_API_KEY
+
 const App = () => {
   const [stories, setStories] = useState([]);
   const [error, setError] = useState('');
 
   const fetchStories = () => {
-    fetchData.getData(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=5tD1M6InGK2xFGKqj8uIHTo5EZJ6Yo0i`)
+    fetchData.getData(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${key}`)
        .then(data => setStories(data.results))
        .catch((error) => {
          setError(error)
@@ -23,7 +25,13 @@ const App = () => {
 
   return (
     <div className="App">
-
+      <Header />
+      <Route exact path='/home'>
+        <Home stories={stories} />
+      </Route>
+      <Route exact path='/error'>
+        <Error />
+      </Route>
     </div>
   );
 }
