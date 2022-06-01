@@ -6,12 +6,14 @@ import homeIcon from '../../home-icon.js';
 const Header = () => {
 
   return (
-    <div className='header'>
-      <h1>Turing Times</h1>
-      <Link to='/'>
-        <img className='home-icon' src={homeIcon}>
-      </Link>
-    </div>
+    <header>
+      <div className='header'>
+        <h1>Turing Times</h1>
+        <Link to='/'>
+          <img className='home-icon' src={homeIcon}/>
+        </Link>
+      </div>
+    </header>
   )
 }
 
