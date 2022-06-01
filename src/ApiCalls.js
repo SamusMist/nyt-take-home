@@ -1,5 +1,5 @@
 const fetchData = {
-  getData(url : string) {
+  getData(url) {
     return fetch(url)
       .then(response => {
         if(!response.ok) {
