@@ -4,11 +4,10 @@ import React, {useState} from 'react';
 import nextId from "react-id-generator";
 
 const Home = ({ stories }) => {
-  htmlID = nextId();
 
   const allStories = stories.map(data => {
     return (
-      <div className='article-display' key={htmlID}>
+      <div className='article-display' key={nextId()}>
         <SingleArticle {...data}/>
       </div>
     )
