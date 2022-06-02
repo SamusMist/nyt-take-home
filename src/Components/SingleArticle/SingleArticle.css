@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: black;
+  margin: 5px;
+}
+
+.card-img {
+  height: 100px;
+}
+
+.card-section {
+  margin-top: 0;
+  margin-right: 0;
+  background-color: black;
+  color: white;
+  font-style: normal;
+  margin-bottom: 80px;
+}
+
+.card-title {
+  color: black;
+}
+
+a:link {
+  text-decoration: none!important;
+}

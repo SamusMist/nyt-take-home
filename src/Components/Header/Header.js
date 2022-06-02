@@ -8,9 +8,9 @@ const Header = () => {
   return (
     <header>
       <div className='header'>
-        <h1>Turing Times</h1>
+        <h1 className='title' >Turing Times</h1>
         <Link to='/'>
-          <img className='home-icon' src={homeIcon}/>
+          <img className='home-icon' src={homeIcon} alt='home icon'/>
         </Link>
       </div>
     </header>

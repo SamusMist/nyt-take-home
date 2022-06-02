@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Turing Times
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Author:
 
-## Available Scripts
+[Sam Mistele](https://github.com/SamusMist)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This project is a final take home challenge, completed in under 8 hours, which demonstrates knowledge of React, Javascript, Remote API endpoint, and CSS. As a user, you can view all of the top stories from the New York Times Top Stories API endpoint and select one to view more information about the article, including the link. If you want to find a specific article, there is a search bar at the top that will filter out the articles that do not include the user input.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screen Shot 2022-06-02 at 2 26 35 PM](https://user-images.githubusercontent.com/89484102/171732010-bf161920-95ce-441f-b722-37e9ec87afa8.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screen Shot 2022-06-02 at 2 27 29 PM](https://user-images.githubusercontent.com/89484102/171732146-0b71ed91-9dd2-4ccd-924c-d09bbe9ad68c.png)
 
-### `npm test`
+## Wireframe
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Given more time, this is the wireframe for the mobile version which would include responsive design.
+![Screen Shot 2022-06-02 at 2 24 56 PM](https://user-images.githubusercontent.com/89484102/171731775-287ab34a-8f11-442f-a145-c8f2f59b875e.png)
 
-### `npm run build`
+## Accessibility
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screen Shot 2022-06-02 at 2 38 18 PM](https://user-images.githubusercontent.com/89484102/171733891-fa0a4202-27f1-49ca-a6dd-330e999157ea.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tech used
 
-### `npm run eject`
+- React
+- CreateReactApp
+- HTML
+- CSS
+- Javascript
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation instructions
+This repo can be cloned locally and run with the command `npm start` in your terminal
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Your local copy requires an API key from the New York Times [which can be generated here](https://developer.nytimes.com/docs/top-stories-product/1/overview)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Place your key in a `.env` file in the root of the directory with the key of `REACT_APP_API_KEY`
