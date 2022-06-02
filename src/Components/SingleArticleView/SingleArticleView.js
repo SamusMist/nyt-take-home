@@ -8,7 +8,7 @@ const SingleArticleView = ({ stories, article }) => {
 
 
   return (
-    <div className=''>
+    <div className='single-view'>
       <img className='single-img' src={articleView.multimedia[0].url} alt={articleView.multimedia[0].caption}/>
       <h1>{articleView.title}</h1>
       <p>{articleView.abstract}</p>
